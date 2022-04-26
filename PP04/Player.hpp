@@ -1,25 +1,30 @@
+#include <iostream>
+#include <string>
+#include "Enemy.hpp"
+
 class Player
 {
 public : 
+	Enemy e;
+	bool c = false;
 	int x, y;
 	Player()
 	{
 		x = 20;
 		y = 7;
+		//check();
 	}
 	~Player()
 	{
 
 	}
 
-	void isKeyPressed()
+	/*void check()
 	{
-		y = 5;
-	}
-
-	void isKeyUnpressed()
-	{
-		y = 7;
-	}
+		if (e.x == x && e.y == y)
+		{
+			c = true;
+		}
+	}*/
 
 };
